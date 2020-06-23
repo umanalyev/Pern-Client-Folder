@@ -6,7 +6,7 @@ import { ListTodos } from "./components/ListTodos";
 function App() {
   return (
     <Fragment>
-      <div className="container">
+      <div className="container form-group">
         <InputTodo />
         <ListTodos />
       </div>

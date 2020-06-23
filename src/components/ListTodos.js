@@ -37,9 +37,15 @@ export const ListTodos = () => {
           </tr>
         </thead>
         <tbody>
-          {todos.map((todo) => (
+          {todos.map((todo, index) => (
             <tr key={todo.todo_id}>
-              <td>{todo.description}</td>
+              <td>
+                <strong>
+                  <i className="fas fa-check "></i>
+                  &nbsp;&nbsp; &nbsp;
+                </strong>
+                {todo.description}
+              </td>
               <td>
                 <EditTodo todo={todo} />
               </td>
