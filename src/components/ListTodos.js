@@ -41,7 +41,7 @@ export const ListTodos = () => {
             <tr key={todo.todo_id}>
               <td>
                 <strong>
-                  <i className="fas fa-check "></i>
+                  <i className="fas fa-check " style={{ color: "green" }}></i>
                   &nbsp;&nbsp; &nbsp;
                 </strong>
                 {todo.description}
